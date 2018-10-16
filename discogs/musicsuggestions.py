@@ -8,6 +8,7 @@ artist1 = input("Artist 1?")
 artist2 = input("Artist 2?")
 
 # assigns artists to their discogs artist id via discogs API
+# note: this is no longer a working token, generate your own on Discogs>Developer Settings
 d = discogs_client.Client('ExampleApplication/0.1', user_token="GGbMZRmjuLZktxPkXHVsHoyYShnLscJvwKFEnDae")
 artist1id = d.search(artist1, type='artist')[0].id
 artist2id = d.search(artist2, type='artist')[0].id
